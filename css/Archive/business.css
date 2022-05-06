@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.row-service{
+  padding:0 5vw 0 5vw;
+  margin-bottom:60px;
+  
+  }
+
+.col-icon{}
+.col-icon img{ 
+  width:100%;
+}
+
+.col-text{
+  
+}
+.col-text{
+  
+}
+
+.box-text{
+  position:relative;
+  padding:0 0 0 20px;
+}
+
+.box-text p::before {
+  content:"";
+  position:absolute;
+  top:5%;
+  bottom:0;
+  left:5px;
+  height:90%;
+  width:4px;
+  background:#466A9B; 
+}
+
+.box-text p{
+ 
+}
+
+
+
+
+  @media (max-width:991px){  
+
+   }  
+   
+  @media (max-width:767px){
+
+   }  
+  
+  @media (max-width:479px){
+
+   }
+  

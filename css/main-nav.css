@@ -1,0 +1,466 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/*-----------------------------------------------------------------------*/
+/*------------------------- Major Navbar Styles -------------------------*/
+/*--------------------- (Brand, Nav-Head, Skip Nav) ---------------------*/
+/*-----------------------------------------------------------------------*/
+
+.navbar {
+  margin-bottom: 0;
+}
+
+#navbar-uw {
+  box-sizing: content-box;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 0;
+  padding-top: 40px;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  z-index: 1000;
+  box-shadow: 0 1px 0px 0px #eee, 
+              0 1px 0px 1px rgba(200, 200, 200, 1),
+              0 1px 0px 2px rgba(190, 190, 190, 1), 
+              0 2px 1px 1px rgba(84, 84, 84, 0.4),
+              0 4px 6px 2px rgba(84, 84, 84, 0.15);
+}
+
+#header-uw {
+  margin-top: -40px;
+}
+
+#brand-logo-uw {
+  width: 175px;
+  margin-top: 7.5px;
+}
+
+#brand-logo-uw-ltr {
+  display: none;
+}
+
+.skipnav {
+  position: absolute;
+  top: -24px;
+  left: 55%;
+  background: transparent;
+  font-weight: 500;
+  color: #fff;
+  padding: 5px 7px 3px 7px;
+  border-radius: 0 0 5px 5px;
+  transition: 0.5s ease all;
+}
+
+.skipnav:focus {
+  position: absolute;
+  top: 0px;
+  background: #ec695e;
+  text-decoration: none !important;
+  transition: 0.3s ease all;
+}
+
+@media (max-width: 991px) {
+  #brand-logo-uw {
+    display: none;
+  }
+  
+  #brand-logo-uw-ltr {
+    display: initial;
+    width: 60px;
+    margin-top: 12.5px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav {
+    margin-top: 0;
+  }
+
+  #header-uw {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  
+  .skipnav {
+    left: 28%;
+  }
+}
+
+@media (max-width: 767px) {    
+    #navbar-uw {
+      padding-top: 25px;
+      height: 50px;
+    }
+    
+    #header-uw {
+      margin-top: -25px !important;
+      height:75px;
+    }
+
+    .navbar-brand{
+      height:75px;
+      padding:0 15px;
+    }
+
+    #brand-logo-uw-ltr{
+      height:50px;
+      width:auto;
+      margin:15px 0 0 5px;
+    }
+    
+    .navbar-toggle {
+      height: 75px !important;
+      width:90px !important;
+      margin-top: 0 !important;
+      margin-right: 0px;
+      margin-bottom: 0 !important;
+    }
+    
+    .navbar-toggle i{
+      padding:7px 0 0 0 !important;
+      font-size:35px;
+      /*text-shadow:0 1px 0px #888;*/
+      line-height:67.5px !important;
+    }
+}
+
+/*-----------------------------------------------------------------------*/
+/*--------------------- General Navbar Link Styles ----------------------*/
+/*------------------ (ul's, li's, a's, collapsed, etc) ------------------*/
+/*-----------------------------------------------------------------------*/
+
+.navbar-nav li {
+  border: none;
+}
+
+.navbar-nav li a {
+  padding: 5px 1vw 5px 1vw;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+  background-color: #fff;
+  line-height: 40px;
+  border: none;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li a:active,
+.navbar-nav li a.active {
+  color: #e95d52;
+  font-weight: 500;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li a:focus {
+  outline-offset: -1px;
+}
+
+.navbar-toggle {
+  height: 80px;
+  width: 100px;
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 0px;
+  background-color: #fff !important;
+}
+
+.navbar-toggle i {
+  color: #888;
+  padding: 10px 0 0 0;
+  width: 70px;
+/*display:inline-block;
+  font:normal normal normal !important;
+  -webkit-font-smoothing:antialiased;*/
+  line-height: 60px;
+}
+
+.navbar-toggle:hover i,
+.navbar-toggle:focus i {
+  color: #e95d52;
+  /*text-shadow:0 1px 0px #e95d52;*/
+}
+
+/* ---- Focus/Open Style for Dropdown Button ----*/
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: #ec695e;
+  border-radius: 5px 5px 0 0;
+}
+
+@media (max-width: 767px) {
+  #navbar-collapse-uw {
+    width: 100%;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding: 0 0 0 0 !important;
+    overflow: hidden;
+    background-color: #fefefe;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    border-left: none;
+    border-right: none;
+    text-align: right !important;
+    box-shadow: 0 5px 5px 0 rgba(84, 84, 84, 0.38);
+  }
+
+  #navbar-collapse-uw ul {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  #navbar-collapse-uw ul li {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  #navbar-collapse-uw ul li a {
+    color: #777;
+    background-color: #fcfcfc;
+    font-size: 20px;
+    border-radius: 0 !important;
+    padding-right: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus,
+  .navbar-collapse li a:hover,
+  .navbar-collapse li a:focus,
+  .navbar-collapse li a:active,
+  .navbar-collapse li a.active,
+  .navbar-collapse.collapse.in li a:hover,
+  .navbar-collapse.collapse.in li a:active,
+  .navbar-collapse.collapse.in li a.active {
+    background: #fff !important;
+    color: #e95d52 !important;
+    border-radius: 0;
+  }
+  .navbar-default .navbar-nav > .open > a,
+  #navbar-collapse-uw ul li a:hover,
+  #navbar-collapse-uw ul li a:active{
+    outline:none !important;
+  }
+
+  #navbar-collapse-uw ul li a.active{
+    border-top:1px solid rgba(0,0,0,0.04) !important;
+    border-bottom:1px solid rgba(0,0,0,0.07) !important;
+  }
+  .dropdown-menu li a.active{
+    border-bottom:1px solid rgba(0,0,0,0.07) !important;
+  }
+
+  #navbar-collapse-uw .dropdown-menu {
+    min-width: 100%;
+    text-align: right;
+    border-bottom: 1px solid #eee;
+    border-top: 2px solid #eee;
+  }
+
+  #navbar-collapse-uw .dropdown-menu li a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    border-bottom: 0px solid #eee;
+    background:#fafafa;
+  }
+
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: #fff;
+    border: 0;
+  }
+
+  .navbar-nav .open .dropdown-menu li a:hover,
+  .navbar-nav .open .dropdown-menu li a:focus {
+    background: #fff;
+  }
+}
+
+
+
+/*-----------------------------------------------------------------------*/
+/*------------------------- Dropdown Menu Styles ------------------------*/
+/*------------------------- (Services Dropdown) -------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.dropdown-menu {
+  min-width: 175px;
+  padding: 0px 0;
+  margin: 2px 0 0;
+  text-align: left;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0px 1px 0px 0px #eee, -1px 2px 0px 0px rgba(200, 200, 200, 1),
+    -1px 7px 5px 1px rgba(90, 90, 90, 0.2);
+}
+
+.dropdown-menu-left {
+  left: 0;
+  right: auto;
+}
+
+.navbar-nav .open .dropdown-menu > li > a,
+.navbar-nav .dropdown-menu > li > a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  background-color: #fdfdfd;
+  margin: 0;
+  padding: 10px 15px 10px 15px;
+}
+
+.navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-nav .open .dropdown-menu > li > a.active {
+  background-color: #fff;
+  border-left: 3px solid #e86c56;
+  margin: 0;
+  padding: 10px 15px 10px 12px;
+}
+
+/* ----- "See All" for Services in Dropdown -----*/
+
+.serv-all {
+  padding: 7.5px 15px 10px 15px !important;
+  font-weight: 500 !important;
+  text-align: right;
+  line-height: 100% !important;
+}
+
+.serv-all.active {
+  color: #466a9b !important;
+  border-left: none !important;
+}
+
+.serv-all:hover,
+.serv-all.active:hover {
+  border-left: none !important;
+  color: #466a9b !important;
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .serv-all {
+    padding: 7.5px 40px 10px 15px !important;
+  }
+
+  .serv-all:hover {
+    border-left: none !important;
+    color: #466a9b !important;
+    font-weight: 500 !important;
+    text-align: right;
+    padding: 7.5px 40px 10px 15px !important;
+  }
+}
+
+/*-----------------------------------------------------------------------*/
+/*--------------------------- Participate Link --------------------------*/
+/*------------------------- (Green Callout Link) ------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.standout-participate {
+  padding-top: 15px;
+  margin: 0 .6vw 0 .6vw;
+}
+
+.standout-participate a {
+  color: #fff !important;
+  padding: 5px 10px !important;
+  margin: 0 auto;
+  font-size: 18px !important;
+  background: #3ba767 !important;
+  font-weight: 400;
+  border-radius: 1px;
+  border: 0;
+  text-shadow: 0 1px 1px #0F7839, 0 0px 2px #0F7839;
+  box-shadow: 0px 1px 0px 0px #269c56, 0px 2px 2px 0px rgba(0, 0, 0, 0.13);
+  opacity:1;
+    transition:.1s linear opacity;
+}
+
+.standout-participate:hover a {
+  color: #fff !important;
+  opacity: 0.9;
+    transition:.1s linear opacity;
+}
+
+.standout-participate a:hover,
+.standout-participate a:focus{
+  transition:.1s linear opacity;
+ }
+
+.standout-participate a:hover,
+.standout-participate a:focus {
+  color: #fff !important;
+}
+
+.standout-participate a:focus {
+  outline-offset: 2px !important;
+}
+
+#active-participate,
+.standout-participate a:active{
+  background:#fff !important;
+  color:#3ba767 !important;
+  text-shadow:none !important;
+  box-shadow: none;
+}
+
+.standout-participate a:active{
+  transition:0s linear all;
+ }
+
+
+@media (max-width: 767px) {
+  .standout-participate {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .standout-participate a {
+    display: block;
+    width: 100% !important;
+    padding: 5px 40px 5px 0 !important;
+    font-size: 20px !important;
+    text-align: right;
+    color: /*#3ba767*/ #767676 !important;
+    background: #FCFCFC !important;
+    font-weight: 400;
+    border-radius: 0px;
+    border: 0;
+    text-shadow:none !important;
+    box-shadow: none !important;
+      transition:0s linear all 0s;
+  }
+  
+  .standout-participate a:hover,
+  .standout-participate a:focus{
+    text-decoration:none; 
+   }
+  
+  #active-participate{
+    background:#fff !important;
+    color:#44AA6D !important;
+    box-shadow: none !important;
+  }
+}

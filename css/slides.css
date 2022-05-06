@@ -1,0 +1,230 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.col-head-slides{}
+
+.col-head-slides h2{
+  padding:15px 0 0 0;
+}
+
+@media (max-width:767px){
+  .col-head-slides h2{
+    padding:7.5px 0 0 0 !important;
+  }
+}
+
+/*-----------------------------------------------------------------------*/
+/*--------------------------- Slides Section ----------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.col-slide{
+  padding:15px 15px 45px 15px;
+}
+   
+.col-slide h3{
+  margin:0px 0px 0px 0px; 
+  padding:0px 0px 5px 0px;
+  font-size:20px; 
+  overflow: hidden; 
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.col-slide h4{
+  margin:0px 0px 0px 0px;
+  padding:0px 0px 5px 2.5px; 
+  font-size:14px;
+  font-weight:400;
+}
+
+.col-slide p{
+  margin:0px 0px 0px 0px; 
+  padding:0px 0px 5px 2.5px; 
+  font-size:12px; 
+  font-style:italic;
+}
+
+
+.col-slide p a{
+  color:#555;
+  text-decoration:underline;
+}
+
+.col-slide p a:hover,
+.col-slide p a:focus{
+  color:#466A9B;
+  text-decoration:none;
+}
+
+.col-slide .fr{
+  background-image: url("../img/iframe-loading.png");
+  background-repeat: no-repeat;
+  background-size:100%;
+  background-color: #666;
+  border:1px solid #CCC; 
+  border-width:1px; 
+  margin:0px 0px 0px 0px; 
+  width: 100%;
+  min-height:250px;
+  max-height:400px !important;
+  box-shadow:0 1px 1px 0 rgba(0,0,0,0.2)
+}
+
+.col-slide .fr:before{
+  content:"loading...";
+  position:absolute;
+  font-size:40px;
+  font-weight:500;
+}
+
+.box-pdf{
+  min-height:200px; 
+  padding:20px 15px; 
+  background:#f9f9f9;
+}
+
+.box-pdf a{
+  color:#466A9B !important;
+  text-decoration:underline;
+}
+
+
+@media (max-width:767px){
+  .col-slide{
+    padding:15px 15px 30px 15px;
+  } 
+   
+ .col-slide h3{
+    font-size:18px; 
+  }
+  
+  .col-slide h4{
+    padding:0px 0px 2.5px 1px !important; 
+  }
+
+  .col-slide p{
+    padding:0px 0px 5px 1px !important; 
+  }
+  .col-slide fr{
+    min-height:initial;
+  } 
+}
+
+@media (max-width:479px){  
+ .col-slide{
+    padding:15px 15px 15px 15px;
+  }  
+ .col-slide h3{
+    font-size:16px; 
+  }
+}
+
+
+/*-----------------------------------------------------------------------*/
+/*------------------------ Publications Section -------------------------*/
+/*-----------------------------------------------------------------------*/
+ 
+.col-pub{
+  padding:15px 15px 15px 15px;
+}
+   
+.col-pub h3{
+  margin:0px 0px 0px 0px; 
+  padding:0px 0px 5px 0px;
+  font-size:20px; 
+  overflow: hidden; 
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.col-pub h3 a{
+  color:#595959;
+}
+
+.col-pub h3 a:hover,
+.col-pub h3 a:focus{
+  color:#466A9B;
+}
+
+.col-pub h3 a i{
+  font-size:12px;
+  vertical-align:top;
+}
+
+.col-pub h4{
+  margin:0px 0px 0px 0px;
+  padding:0px 0px 5px 2.5px; 
+  font-size:14px;
+  font-weight:400;
+}
+
+.col-pub p{
+  margin:0px 0px 0px 0px; 
+  padding:0px 0px 5px 2.5px; 
+  font-size:12px; 
+  font-style:italic;
+}
+
+.col-pub p a{
+  color:#555;
+  text-decoration:underline;
+}
+
+.col-pub p a:hover,
+.col-pub p a:focus{
+  color:#466A9B;
+  text-decoration:none;
+}
+
+.dl-link{
+  padding:0 0 0 5px;
+  color:#466A9B;
+}
+
+.dl-link:hover,
+.dl-link:focus{
+  color:#595959;
+  text-decoration:underline;
+}
+
+.dl-link i{
+  margin-right:7.5px;
+  font-size:12px;
+  vertical-align:1px;
+}
+
+@media (max-width:767px){
+  .col-pub{
+    padding:15px 15px 30px 15px;
+  } 
+   
+ .col-pub h3{
+    font-size:18px; 
+    overflow: visible; 
+    white-space: normal;
+    text-overflow: initial;
+  }
+  
+  .col-pub h3 a i{
+    font-size:10px;
+    vertical-align:2px;
+  }
+  
+  .col-pub h4{
+    padding:0px 0px 2.5px 1px !important; 
+  }
+
+  .col-pub p{
+    padding:0px 0px 5px 1px !important; 
+  }
+}
+
+@media (max-width:479px){
+  .col-pub{
+    padding:15px 15px 15px 15px;
+  }     
+  .col-pub h3{
+    font-size:16px; 
+   }
+}

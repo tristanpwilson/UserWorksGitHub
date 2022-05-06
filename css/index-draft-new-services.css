@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*----- Services Containers Styles -----*/
+.container-home-services-new {
+  padding: 30px 0px 45px 0px;
+}
+
+.row-home-services-new {
+  padding:0 45px 0 45px;
+}
+
+.box-home-services-new {
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  width:100%;
+  padding:0 30px;
+}
+
+.col-home-services-new {
+  position:relative;
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  gap:20px;
+  width:100%;
+  flex-basis:100px;
+  flex-grow:2;
+  padding:25px 15px;
+  border:1px solid transparent;
+  border-radius:5px;
+  transition:.5s ease all;
+}
+
+  .col-home-services-new:hover,
+  .col-home-services-new:focus {
+    border:1px solid #efefef;
+    text-decoration:none;
+  }
+
+.wrapper-img-services-new{
+  flex-basis:85px;
+  flex-shrink:0;
+  height:auto;
+}
+
+.wrapper-img-services-new img{
+  width:100%;
+  height:auto;
+}
+
+.wrapper-home-services-text-new{
+  flex-basis:calc(100% - 105px);
+  flex-shrink:0;
+}
+
+.wrapper-home-services-text-new h4{
+  margin:0 0 10px 0;
+  padding:0 0;
+}
+
+.wrapper-home-services-text-new p{
+  margin:0 0;
+  padding:0 0;
+}
+
+.wrapper-home-services-text-new p b,
+.wrapper-home-services-text-new p b i{ 
+  /*This is the style for the "Learn more" text*/
+  color: #466A9B;
+}
+
+
+
+  @media (max-width:1199px) {
+    .container-home-services-new {
+      padding: 25px 0 40px 0;
+    }
+    .row-home-services-new {
+      padding:0 15px 0 15px;
+    }
+    .col-home-services-new {
+      padding:20px 12.5px;
+    }
+  }
+
+  @media (max-width:991px) {
+    .container-home-services-new {
+      padding: 20px 0 35px 0;
+    }
+    .row-home-services-new {}
+    .col-home-services-new {
+      padding:15px 10px;
+    }
+  }
+
+  @media (max-width:767px) {
+    .container-home-services-new {
+      padding: 10px 0 15px 0;
+    }
+    .row-home-services-new {
+
+    }
+    .box-home-services-new {
+      max-width:600px;
+      margin:0 auto;
+      padding:0 15px;
+    }
+    .col-home-services-new {
+      padding:10px 0px;
+    }
+  }
+
+
+  @media (max-width:479px) {
+    .container-home-services-new {
+      padding-top: 5px !important;
+      padding-bottom: 5px !important;
+    }
+    .row-home-services-new {
+      padding: 0px 0 !important;
+    }
+    .col-home-services-new {
+      padding: 3px;
+    }
+  }
+
+
+/*----- Services Header/Title Block -----*/
+.title-home-services-new h3 {
+  display: block;
+  width: 220px;
+  margin: 15px auto 15px auto;
+  color: #666;
+  font-size: 24px;
+  text-align: center;
+  background: #fff;
+}
+
+.title-home-services-new h3:before {
+  content: "";
+  position: absolute;
+  z-index: -10;
+  height: 20px;
+  width: 90%;
+  top: 50%;
+  left: 5%;
+  border-top: 2px dashed #eaeaea;
+  border-left: 2px dashed #eaeaea;
+  border-right: 2px dashed #eaeaea;
+}
+
+.title-home-services-new h3 a {
+  color: #666;
+}
+
+.title-home-services-new h3 a:hover,
+.title-home-services-new h3 a:focus {
+  color: #466A9B;
+}
+
+
+  @media (max-width:767px) {
+    .title-home-services-new h3 {
+      width: 200px;
+      font-size: 22px;
+    }
+    .title-home-services-new h3:before {
+      height: 15px;
+      width: 90%;
+      left:5%;
+    }
+  }
+
+
+  @media (max-width:479px) {
+    .title-home-services-new h3 {
+      font-size: 20px;
+    }
+    .title-home-services-new h3:before {
+      height: 15px;
+      width: 90%;
+      left:5%;
+    }
+  }
+
+

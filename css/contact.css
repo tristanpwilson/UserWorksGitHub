@@ -1,0 +1,339 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* ---------------- Upper Contact Info Section ------------------ */ 
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+
+.row-contact-box{
+  padding:15px 0;
+}
+
+.contact-box-h{
+  padding:15px 0 60px 0;
+}
+
+.contact-box-h h1{
+  text-align:center;
+}
+
+.contact-box-a{
+  margin:0 0;
+  text-align:center;
+}
+
+.contact-box-a img{
+  width:30%;
+  max-width:120px;
+}
+
+.contact-box-a h3{
+  margin:22.5px 0 0 0;
+  padding:0;
+  font-size:24px;
+  text-align:center;
+}
+
+.contact-box-a a{
+  display:block;
+  margin:0;
+  padding:7.5px 0 0 0;
+  font-size:14px;
+  text-align:center;
+  color:#555;
+  text-decoration:underline;
+}
+
+.contact-box-a a:hover,
+.contact-box-a a:focus{
+  color:#EC695E;
+  text-decoration:none;
+}
+
+.contact-box-b{
+  max-width:500px;
+  padding:30px 15px 0 15px;
+  margin:15px auto;
+
+}
+
+.contact-box-b h4{
+  margin:0 0 10px 0; 
+}
+
+.contact-box-b p{
+  margin:0;
+}
+
+.contact-box-b h4,
+.contact-box-b p{
+  padding:0;
+  text-align:center;
+}
+
+.contact-box-b a{
+  font-weight:500;
+}
+
+#fax{
+  text-align:center;
+  font-size:14px;
+  color:#767676;
+}
+#fax i{
+  font-size:12px;
+  margin-right:5px;
+  vertical-align:1px;
+}
+
+@media (max-width:991px){
+  .col-contact-box-a{
+    padding:15px;
+    margin:0;
+  }
+}
+
+@media (max-width:767px){
+  .row-contact-box{
+    padding:7.5px 0;
+  }
+  .contact-box-h{
+    padding:5px 8vw 0px 8vw;
+  }
+  .contact-box-h h1{
+    text-align:left;
+  }
+  .col-contact-box-a{
+    padding:2.5px 0px;
+    margin:0;
+  }
+  .contact-box-a{
+    padding:5px 8vw 5px 8vw;
+    margin:0;
+  }
+  .contact-box-a img{
+    height:60px;
+    width:auto;
+    margin:25px 0 15px 0;
+    float:right;
+  }
+  .contact-info{
+    min-height:100px;
+    border-bottom:1px solid rgba(0,0,0,.1);
+  }
+  .contact-box-a h3{
+    font-size:20px;
+    text-align:left;
+  }
+  
+  .contact-box-a a{
+    font-size:14px;
+    text-align:left;
+  }
+  .contact-box-b{
+    max-width:initial;
+    padding: 7.5px 8vw;
+    text-align:left;
+  }
+  .contact-box-b p,
+  .contact-box-b h4,
+  #fax{
+    text-align:left;
+  }
+  .contact-box-b h4{
+    font-size:18px;
+    margin:0 0 7.5px 0;
+  }
+  #fax{
+    margin-top:22.5px;
+  }
+}
+
+@media (max-width:479px){
+  .contact-box-h{
+    padding:5px 3vw 0px 3vw;
+  }
+  .contact-box-a{
+    padding:5px 3vw 5px 3vw;
+  }
+  .contact-box-b{
+    padding: 0px 3vw;
+    text-align:left;
+  }
+}
+
+
+/* ---------------- Map and Directions Section ------------------ */ 
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+
+.col-address-info h2{
+  margin:15px 0 10px 0;
+}
+
+
+.col-address-info p{
+  margin:5px 0 5px 0;
+}
+
+.col-address-info p:last-of-type{
+  margin:0 0 15px 0 !important;
+}
+
+
+.col-address-info a{
+  display:block;
+  margin:0px 0 10px 0;
+  font-size:16px;
+  font-weight:500;
+}
+
+.col-address-info a i{
+  font-size:11px;
+  vertical-align:top;
+}
+
+
+
+
+
+
+.map-container-new{
+  position:relative;
+  width: 98%;
+  margin:15px auto 15px auto;
+  cursor:pointer !important;
+  border: 1px solid rgba(0,0,0,0.09);
+  border-radius:3px; 
+  overflow:hidden;
+}
+
+.map-container-new a img{
+
+}
+
+.map-container-new a img{
+  width:100%;
+
+}
+
+@media (max-width:1199px){
+  .map-container-new a img{
+    min-width:700px;
+  }
+}
+
+@media (max-width:991px){
+  .map-container-new a img{
+    margin-left:-20%;
+  }
+}
+
+@media (max-width:767px){
+  .map-container-new a img{
+    margin-left:0%;
+  }
+}
+
+@media (max-width:767px){
+  .map-container-new{
+    max-height:300px;
+  }
+  .map-container-new a img{
+    margin-top:-10%;
+    margin-left:0%;
+  }
+}
+@media (max-width:479px){
+  .map-container-new a img{
+    float:right;
+    margin-top:-10%;
+    margin-right:-200px;
+  }
+}
+
+
+/*---------Old Google Map------------*/
+
+
+
+#map-canvas{
+  height: 400px;
+  width: 100%;
+  pointer-events: none;
+  
+ }
+  
+.map-container{
+  position:relative;
+  width: 98%;
+  margin:15px auto 15px auto;
+  cursor:pointer !important;
+  border: 1px solid rgba(0,0,0,0.09);
+  border-radius:3px; 
+}
+
+#caption-map{
+  width: 98%;
+  margin:0 auto 30px auto;
+  padding:7.5px 0;
+  font-size:16px;
+  text-align:center;
+  border-top:1px solid #ddd;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  border-left: 1px solid rgba(0,0,0,0.1);
+  border-right: 1px solid rgba(0,0,0,0.1);
+  border-radius:0 0 3px 3px;
+  background-color:#fff;
+}
+
+
+@media (max-width:991px){
+  #map-canvas{
+  height: 300px;}
+}
+
+@media (max-width:767px){
+  .col-address-info{
+    padding: 0 8vw;
+  }
+  
+  .col-address-info p{
+    margin:0 0 10px 0;
+  }
+  
+  .col-address-info a{
+    margin:0px 0 5px 0;
+    font-size:14px;
+  }
+  
+  .col-address-info a i{
+    font-size:10px;
+    vertical-align:top;
+  }
+ 
+  .col-map-container{
+    padding: 0 8vw;
+  }
+}
+
+@media (max-width:479px){
+  .col-address-info{
+    padding: 0 3vw;
+  }
+ 
+  .col-map-container{
+    padding: 0 3vw;
+  }
+  
+  .map-container{
+    position:relative;
+    width: 100%;
+    margin:7.5px auto 7.5px auto;
+   }
+}
+
+
+
+

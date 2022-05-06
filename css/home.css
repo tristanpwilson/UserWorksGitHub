@@ -1,0 +1,307 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*   Red: #e86c56   */
+/*   Orange: #e8aa56   */
+
+
+/*------------------ BANNER ------------------*/
+
+#banner-row{
+ height:360px;
+  background-image: url("../img/banner-test1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+  background-origin:content-box;
+  padding:10px 9vw 30px 5.5vw;
+}
+    
+.banner-head{
+ height:360px;
+}
+
+.banner-head h1{
+  position:absolute;
+  bottom:105px;
+  font-size:66px;
+  color:#fff;
+  line-height:60px;
+  letter-spacing:-1px;
+  text-shadow: 0 1px 0 #999,
+               0 1.5px 0 #888, /* shadow split */
+               -1px 3px 1px rgba(0,0,0,.1),
+               -2px 2px 2px rgba(0,0,0,.1);
+}
+
+
+
+.banner-head .btn-elton{
+  position:absolute;
+  bottom:40px;
+  left:20px;
+  font-size:22px;
+  padding:5px 30px 5px 15px;
+  line-height:32px;
+  font-weight:500;
+  color:#fff;
+}
+.banner-head .btn-elton i{
+ position:absolute;
+ right:14px;
+ bottom:9px !important;
+ opacity:.9;
+ }
+
+@media (max-width:1199px) {
+ #banner-row{
+   height:360px;
+   padding:10px 10vw 30px 4.5vw;}
+ .banner-head{
+   height:360px}
+ .banner-head h1{
+   font-size:66px;}}
+   
+@media (max-width:991px) {
+ #banner-row{
+   height:340px;}
+ .banner-head{
+   height:340px}
+ .banner-head h1{
+   font-size:6.5vw;
+   line-height:7vw;
+   bottom:80px;}
+ .banner-head .btn-elton{
+   bottom:30px;}}
+   
+@media (max-width:767px) {
+ #banner-row{
+   height:375px;
+   padding:0px 0 20px 0;
+   background-position: center center;}
+ .banner-head {  
+   height:100%;
+   padding:0;}
+ .banner-head h1{
+   width:100%;
+   text-align:center;
+   padding:7.5px 0px 12px 0px;
+   bottom:-30px;
+   line-height:45px;
+   font-size:6.2vw;  
+   background-color:rgba(236,105,94,0.90); 
+   box-shadow:0 0px 1px 1px rgba(191,70,48,0.8);
+   text-shadow: 0 1px 0 #888,                
+                -2px 2px 1px rgba(0,0,0,.1),
+                -1px 0 5px rgba(0,0,0,.1)}  
+                
+   .banner-head h1 br{display:none}
+   .banner-head .btn-elton{display:none;}                
+   #banner-divider{display:none;}
+ }
+
+@media (max-width:479px) {
+  #banner-row{
+   height:350px;}
+  .banner-head h1{ font-size:8vw; line-height:8vw; padding:5px 0px 7.5px 0px; background-color:rgba(236,105,94,0.95); }
+  .banner-head h1 br{display:initial}}
+
+
+
+/*------------------ROW 1------------------*/
+
+
+#body-about-logo{position:relative; display:block; width:100px; margin:0 auto; padding:30px 0 0 0; vertical-align:initial}
+
+.body-about-head{ margin-bottom:30px;}
+
+.body-about-head h2{text-align:center; font-size:44px; line-height:44px; padding:0; margin:7.5px 0 0 0;}
+#body-about-logo-lg{position:relative; display:inline-block; width:205px; margin:0 0 -3px 0; padding:0; vertical-align:initial}
+
+.body-about-content{ padding:0 40px; margin-bottom:0px;}
+
+.body-about-content p{ text-indent:30px; margin-bottom:0px; font-size: 22px;}
+
+
+  
+@media (max-width:767px){
+  #body-about-logo{ width:100px; margin:0 auto; padding:10px 0 0 0; vertical-align:initial}
+  .body-about-head{ padding:0; }
+  .body-about-head h2{ padding-top:0px;}
+  .body-about-content{ padding: 0 15px; margin-bottom:0px;}
+  .body-about-content p{ text-align:justify; text-indent:0px;  margin-bottom:0px; font-size: 18px;}
+  
+  }
+@media (max-width:479px){
+  #body-about-logo{float:none; margin:0 auto;}
+  .body-about-head h2{float:none; text-align:center; font-size:26px; line-height:11vw;}
+  .body-about-content{ padding:0 10px;}
+  .body-about-content p{ text-align:center; line-height:22px;}
+  }
+
+
+
+
+
+/*----------------------------- ROW 2 ----------------------------*/
+
+
+.body-service-head{ margin-bottom:10px;}
+.body-service-head h2{text-align:center; font-size:40px; line-height:77px; padding:7.5px 0 0 10px; margin:0;}
+.home-hr{ width:25%; margin:15px auto;}
+
+.aligner-home-service{
+  padding:0;}
+.col-home-service{  
+  padding: 0 7.5px;
+  }
+.panel-home-service{
+  margin:7.5px 0;
+  padding:30px 22.5px 15px 22.5px;
+  border-radius:5px;  
+  background:#fff;
+  box-shadow:0 1px 1px 0 rgba(0,0,0,0.38);
+  transition:.2s ease all}
+  
+.panel-home-service:hover,
+.panel-home-service:focus{ 
+  box-shadow:0px 3px 6px 0px rgba(0,0,0,0.30); transition:.1s ease all}
+
+  
+@media (min-width:1200px){
+  .panel-home-service{
+   min-height:280px !important;}
+  }  
+@media (min-width:992px) and (max-width:1199px){
+  .panel-home-service{
+   min-height:265px !important;}
+  }  
+  
+@media (min-width:768px) and (max-width:991px){
+  .panel-home-service{
+   min-height:295px !important;
+  }
+  .panel-home-service p{ 
+    line-height:20px;}
+  }  
+ @media (max-width:767px){
+  .panel-home-service{
+   min-height:0;
+   padding:15px!important}
+  .panel-home-service p{ 
+    position:relative;
+    font-size:18px !important;
+    line-height:22px;
+    z-index:initial;}
+  .col-home-service{  
+    padding: 0 6vw;
+  }
+ }  
+ @media (max-width:479px){
+  .col-home-service{  
+    padding: 0 2vw;
+   }
+  }
+  
+ .panel-home-service p{ 
+    position:relative;
+    font-size:16px;
+    z-index:1000;  /* <--- For ensuring that the <p> text is highlight-able with the link covering the entire container */
+  }
+
+
+.panel-home-service h1{ 
+  font-size:34px;
+  font-weight:400;
+  color:#666;
+  margin-top:0;
+  padding:15px 0 0 0;
+ }
+
+.panel-home-service h1{ 
+ transition:.3s ease all}
+ 
+.panel-home-service:hover h1,
+.panel-home-service:focus h1{ 
+ transition:.3s ease all}
+#panel-evaluation:hover h1,
+#panel-evaluation:hover h1{ 
+  color:#3E6599}
+#panel-design:hover h1,
+#panel-design:hover h1{ 
+  color:#E9A652}
+#panel-remediation:hover h1,
+#panel-remediation:hover h1{ 
+  color:#3BA767}
+#panel-recruitment:hover h1,
+#panel-recruitment:hover h1{ 
+  color:#E95D52}
+
+
+
+  
+.panel-home-service i{ 
+  position:relative; 
+  width:100%;
+  text-align:center;
+  font-size:34px;
+  
+ }
+  
+#panel-evaluation i{ color:#3E6599}
+
+#panel-design i{ color:#E95D52}
+
+#panel-remediation i{color:#3BA767}
+
+#panel-recruitment i{ color:#E9A652}
+
+.panel-home-service .img-service{ 
+  position:relative; 
+  display:block;
+  height:70px;
+  width:auto;
+  margin:0 auto;  
+ }
+
+/*------------------ROW 3------------------*/
+
+#col-sign-up{ padding:0 40px; }
+#col-sign-up h2{ font-size:38px; text-align:center }
+#col-sign-up p{ text-align:justify; font-size:18px; }
+#col-sign-up .col-button{ padding:22.5px 0 15px 0; text-align:center;}
+#col-sign-up button{ font-weight:500; margin:0 0 0 0; padding:7.5px 25px; color:#fff !important;}
+#col-sign-up{ padding: 15px 0}
+
+
+
+@media (max-width:767px) {
+  .row-sm-lim {
+    max-width: 675px;}
+  #col-sign-up h2{ font-size:30px; text-align:center}
+}
+@media (max-width:479px) {
+  #col-sign-up h2{ font-size:22px; text-align:left}
+}
+
+
+
+.tweets{}
+
+#tweet-box, #news-box{
+  padding:5px;
+  background:#fff;
+  border-radius:3px;
+  box-shadow:0 1px 2px 0 rgba(0,0,0,0.25);
+}
+
+#tweet-box h2, 
+ #news-box h2{
+  font-size:32px;
+  margin:10px 0 10px 0 !important;
+  font-weight:400; 
+  }
+
+#news-box{
+
+}

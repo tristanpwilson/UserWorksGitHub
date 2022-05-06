@@ -1,0 +1,214 @@
+@charset "utf-8";
+/* CSS Document */
+
+ .row-form-header,
+ .form-group-con{
+   padding:0 15px 0 15px;
+ }
+ 
+ .row-form-message,
+ .col-form-message {
+   padding:0 15px 0 15px !important;  
+   min-height:initial;
+ }
+  
+ .col-form-header{
+   padding:15px 5px;
+ } 
+  
+ .col-form-group{
+   padding:15px 15px;
+ }
+ 
+ 
+   
+ 
+ 
+.form-group-con .text-label{ 
+font-size:16px;
+ font-weight:500;
+  display:block; 
+  }
+  
+.form-group-con .text-input{
+   display:inline-block;
+    width:100% ;
+ }
+
+label b,
+legend b,
+p b{
+   color:#E15348;
+   margin-right:2px;
+}
+
+#message{
+  resize: none;
+  min-height:120px;
+}
+
+/*---- General Input Validation Styles ----*/
+.form-group-con input.inputEmpty:required,
+.form-group-con textarea.inputEmpty:required{
+  border:2px solid rgba(236,195,94,.8) !important;
+}
+
+.form-group-con input.inputChanged:required:placeholder-shown,
+.form-group-con input:required:focus,
+.form-group-con input:required:valid,
+.form-group-con textarea.inputChanged:required:placeholder-shown,
+.form-group-con textarea:required:focus,
+.form-group-con textarea:required:valid{
+  border:1px solid #ccc !important;
+}
+
+.form-group-con input:focus:invalid,
+.form-group-con textarea:focus:invalid{
+  color:#555 !important;
+  font-weight:400 !important;
+  border:1px solid #ccc !important;
+}
+
+.form-group-con input.inputEmpty,
+.form-group-con textarea.inputEmpty{
+  font-weight:400 !important;
+}
+
+.form-group-con input.inputChanged:invalid,
+.form-group-con textarea.inputChanged:invalid{
+  color:#E15348;
+  font-weight:500;
+  border:2px solid rgba(236,105,94,1);
+}
+
+/*----- After input, remain red if invalid but gray if blank ------*/
+/*.form-group-con input.inputChanged:invalid:focus{
+  border:2px solid rgba(236,105,94,1) !important;
+  transition:none;
+}
+
+.form-group-con input.inputChanged:required:placeholder-shown{
+  border:1px solid #ccc !important;
+}*/
+
+.row-recaptcha{
+  padding-left:15px;
+}
+
+.row-recaptcha .col-form-group{
+  padding-left:15px;
+}
+.row-recaptcha .col-form-group p{
+  font-size:14px !important;
+  font-style: italic;
+}  
+ 
+/* Form Submit Button Styles*/ 
+ #col-form-submit{
+   padding:15px 15px 30px 15px;}
+
+ #contactsubmit{
+   background:#44AA6D;
+   color:#fff;
+   border-radius:1px;
+   border:none;
+   box-shadow: 0px 1px 0px 0px #269C56, /*0px 2px 0px 0px #269C56,*/ -0px 2px 1px 0px rgba(0, 0, 0, 0.23);
+ }
+ 
+ #contactsubmit:disabled{
+   background:#e0e0e0;
+   color:#555;
+   box-shadow: none;
+   text-shadow:none;
+ }
+
+@media (max-width:767px){     
+   .col-form-header{
+     padding:0px 7.5px;
+   }  
+   .col-form-header .text-block{
+     padding-bottom:5px;
+   }  
+   .form-group-con{
+     padding:0 10px 0px 10px;
+   }
+   .col-form-group{
+     padding: 10px 2vw 10px 2vw !important;
+   }
+   .row-recaptcha{
+     padding-left:10px !important;
+   }
+   .row-recaptcha .col-form-group{
+     padding-left:2vw !important;
+   }
+   .row-recaptcha .col-form-group p{
+     font-size:12px !important;
+   }  
+   .recaptcha{
+     -webkit-transform:scale(0.87);
+     transform:scale(0.87);
+     -webkit-transform-origin:0 0;
+     transform-origin:0 0;
+   }
+ }  
+  
+
+ @media (max-width:479px){
+   .container-form-cont{
+     padding: 7.5px  5px 22.5px 5px;
+   }
+   .row-form-header,
+   .form-group-con {
+     padding:0 0px 0 0px;
+   }
+   .col-form-header{
+     padding:0px 7.5px;
+   }  
+   .col-form-group{
+     padding: 10px 2vw 10px 2vw !important;
+   }
+   .col-form-group .text-label{
+     font-size:14px !important;
+   }
+
+    #col-form-submit{
+     padding:10px 2vw;
+    }
+    #col-form-submit button{
+     font-size:14px;
+    }
+
+    .row-recaptcha{
+      padding-left:0px !important;
+    }
+
+}
+
+
+
+.success,
+.error{
+  padding: 15px;
+  margin-bottom: 15px;
+  font-weight:500;
+  color: #555; 
+ }
+
+.success {
+  background-color: rgba(82,204,131,.2);
+  border: 1px solid #d6e9c6;
+  border-radius: 2px;
+}
+
+.error {
+  background-color: rgba(236,105,94,.2);
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  border-radius: 2px;
+}
+
+#form-mes-focus, 
+.success:focus, 
+.error:focus{
+  text-decoration:none !important;
+ }
+  

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://userworks.com/</loc>
+  <lastmod>2017-08-16T15:29:29+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.0</priority>
+</url>
+<url>
+  <loc>http://userworks.com/index.html</loc>
+  <lastmod>2017-08-16T15:29:29+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.0</priority>
+</url>
+<url>
+  <loc>http://userworks.com/usercentereddesign.html</loc>
+  <lastmod>2017-08-10T20:29:54+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://userworks.com/accessibility.html</loc>
+  <lastmod>2017-08-10T19:47:32+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://userworks.com/meddevstandards.html</loc>
+  <lastmod>2017-08-17T14:35:55+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://userworks.com/recruiting.html</loc>
+  <lastmod>2017-08-15T20:35:03+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://userworks.com/business.html</loc>
+  <lastmod>2017-08-16T15:45:55+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+<url>
+  <loc>http://userworks.com/team.html</loc>
+  <lastmod>2017-08-15T21:36:04+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>http://userworks.com/facilities.html</loc>
+  <lastmod>2017-08-16T15:29:11+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>http://userworks.com/contact.html</loc>
+  <lastmod>2017-08-18T15:15:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>http://userworks.com/participate.html</loc>
+  <lastmod>2017-08-15T21:35:53+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>http://userworks.com/about.html</loc>
+  <lastmod>2017-08-16T15:46:23+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>http://userworks.com/participate-form.html</loc>
+  <lastmod>2017-08-17T16:53:14+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.4</priority>
+</url>
+<url>
+  <loc>http://userworks.com/slides.html</loc>
+  <lastmod>2017-08-10T20:29:08+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.4</priority>
+</url>
+<url>
+  <loc>http://userworks.com/media.html</loc>
+  <lastmod>2017-08-10T20:28:56+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.4</priority>
+</url>
+<url>
+  <loc>http://userworks.com/contact-form.html</loc>
+  <lastmod>2017-08-10T19:47:30+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.4</priority>
+</url>
+</urlset>

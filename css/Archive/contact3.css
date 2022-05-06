@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.row-contact-box{
+  padding:15px 0;
+}
+
+.contact-box-h{
+  padding:15px 0 45px 0;
+}
+
+.contact-box-h h2{
+  text-align:center;
+}
+
+.contact-box-a{
+  margin:0 0;
+  text-align:center;
+}
+
+.contact-box-a img{
+  width:30%;
+  max-width:120px;
+}
+
+.contact-box-a h3{
+  margin:22.5px 0 0 0;
+  padding:0;
+  font-size:24px;
+  text-align:center;
+}
+
+.contact-box-a p{
+  margin:0;
+  padding:7.5px 0 0 0;
+  font-size:14px;
+  text-align:center;
+}
+
+
+
+.contact-box-b{
+  padding:30px 15px 0 15px;
+  margin:15px 0;
+
+}
+
+.contact-box-b h4,
+.contact-box-b p{
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+
+
+@media (max-width:991px){
+  .col-contact-box-a{
+    padding:15px;
+    margin:0;
+  }
+}
+
+@media (max-width:767px){
+  .col-contact-box-a{
+    padding:2.5px 0px;
+    margin:0;
+  }
+  .contact-box-a{
+    padding:25px 30px;
+    margin:0;
+  }
+}
+
+
+
+#map-canvas{
+  height: 400px;
+  width: 100%;
+  pointer-events: none;
+  
+ }
+  
+.map-container{
+  position:relative;
+  width: 98%;
+  margin:15px auto 0px auto;
+  cursor:pointer !important;
+  border: 1px solid rgba(0,0,0,0.09);
+  border-radius:3px; 
+}
+
+#caption-map{
+  width: 98%;
+  margin:0 auto 30px auto;
+  padding:7.5px 0;
+  font-size:16px;
+  text-align:center;
+  border-top:1px solid #ddd;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  border-left: 1px solid rgba(0,0,0,0.1);
+  border-right: 1px solid rgba(0,0,0,0.1);
+  border-radius:0 0 3px 3px;
+  background-color:#fff;
+}
+
+
+@media (max-width:991px){
+  #map-canvas{
+  height: 300px;}
+  }

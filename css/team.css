@@ -1,0 +1,558 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+ /* --------- New Skip to employee dropdown index ---------- */
+ /* ---------------------------------------------------------*/
+ /* ---------------------------------------------------------*/ 
+  
+.container-title-team{
+  padding:60px 0 0 0;
+  transition:.2s ease all;
+ }  
+
+/* Button for Expandable Employee Quick Links */  
+#col-btn-emp-expand{
+
+}
+
+.btn-emp-expand{
+  float:right;
+  margin-right:22.5px;
+  color:#555;
+  font-size:18px;
+  font-weight:500;
+  background:none;
+  transition:.2s linear all;
+} 
+
+.btn-emp-expand i{
+  font-size:15px;
+}
+
+.btn-emp-expand:hover,
+.btn-emp-expand:focus{
+  color:#444;
+  outline:none !important;
+} 
+
+.btn-emp-expand:after{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:1px;
+  left:0%;
+  bottom:-1px;
+  background:#f0f0f0;
+  opacity:0;
+  transition:.3s ease-out opacity;
+}
+
+.btn-emp-expand:hover:after{
+  opacity:1;
+  transition:.3s ease opacity;
+}
+
+  
+/* Container for Expandable Employee Quick Links */  
+.container-emp-expand{
+  padding:0 !important;
+  background:#fcfcfc; 
+}
+ 
+.collapse .container-emp-expand {visibility: hidden;}
+
+.collapse.in .container-emp-expand {visibility: visible;} 
+ 
+.row-emp-expand{
+   padding:10px 30px;
+ }
+  
+.col-emp-expand{
+   display:block;
+   position:relative;
+   float:left;
+   padding:0 30px;
+   margin-bottom:0px;
+ }
+ 
+.col-emp-expand h3{
+   margin:22.5px 0 7.5px 0;
+   padding:0 0 7.5px 0;
+   font-size:17px;
+   border-bottom:1px solid rgba(0,0,0,0.04)
+ } 
+ 
+#list-emp-expand-1,
+#list-emp-expand-2 {
+   margin:0;
+   padding:0;
+}
+
+#list-emp-expand-1 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2; 
+    column-count: 2;
+    -webkit-column-width: 200px; /* Chrome, Safari, Opera */
+    -moz-column-width: 200px; /* Firefox */
+    column-width: 200px;
+}
+
+#list-emp-expand-2 {
+    -webkit-column-count: 1;
+    -moz-column-count: 1; 
+    column-count: 1;
+    -webkit-column-width: 200px; /* Chrome, Safari, Opera */
+    -moz-column-width: 200px; /* Firefox */
+    column-width: 200px;
+}
+
+.emp-anchor-2 {
+  margin:0;
+  padding: 0;
+  font-size:16px;
+  line-height:160%;
+  list-style:none;
+}
+
+.link-emp {
+  color:#555;
+}
+
+.link-emp:hover {
+  color:#EC695E;
+  text-decoration:underline;
+}
+
+
+@media (max-width:991px){
+ .btn-emp-expand{
+   margin-right:7.5px;
+ } 
+ 
+ #list-emp-expand-1 {
+    -webkit-column-width: 180px; /* Chrome, Safari, Opera */
+    -moz-column-width: 180px; /* Firefox */
+    column-width: 180px;
+ }
+
+ #list-emp-expand-2 {
+    -webkit-column-width: 180px; /* Chrome, Safari, Opera */
+    -moz-column-width: 180px; /* Firefox */
+    column-width: 180px;
+ }
+
+ .link-emp {
+  font-size:14px;
+ }
+} 
+ 
+ 
+@media (max-width:767px){
+ .container-title-team{
+   padding:45px 0 0 0;
+ } 
+  
+ .btn-emp-expand{
+   margin-right:0px;
+ } 
+  
+ .row-emp-expand{
+   padding:0 7.5px;
+ }
+ .col-emp-expand {
+   width:100%;
+ }
+ 
+ .col-emp-expand h3{
+   font-size:16px;     
+   text-align:right;
+ }
+ 
+ #list-emp-expand-1,
+ #list-emp-expand-2  {
+   text-align:right;
+  -webkit-column-count: 1; /* Chrome, Safari, Opera */
+  -moz-column-count: 1; /* Firefox */
+   column-count: 1;
+  -webkit-column-width: auto; 
+  -moz-column-width: auto; 
+   column-width: auto;
+ }
+}
+
+@media (max-width:479px){
+ .container-title-team{
+   padding:30px 0 0 0;
+ } 
+ .btn-emp-expand{
+   font-size:17px;
+ } 
+}
+
+
+
+/* ------ Employee Bios - Container + Content Styles ------ */
+/* ---------------------------------------------------------*/
+/* ---------------------------------------------------------*/
+ 
+#container-team{
+   padding-top:15px;
+   border:none !important;
+   box-shadow:none !important;
+ } 
+ 
+.anchored{
+  position:relative;
+  display:block;
+  padding: 20px 0px;
+ }
+
+
+
+/*------------------------------ START New Employee Styles 2022 ------------------------------*/
+
+.employee-container-new{ 
+  display:flex;
+  flex-wrap:nowrap;
+  max-width:1150px;
+  margin:0 auto;
+  padding: 15px 30px 15px 15px;
+  transition:.5s ease all;
+}
+
+.employee-headshot{
+  flex-basis:auto;
+}
+
+    .employee-headshot img{
+      display:block;
+      height:115px;
+      width:115px;
+      background:#aaa;
+      border:0px;
+      border-radius:50%;
+      margin:0;
+      box-shadow:0 0 2px 0 rgba(0,0,0,0.3);
+      background-image:url("../img/photos/headshots/stock-headshot.png");
+      background-size:cover;
+    }
+
+.employee-info-new{
+  flex-basis:250px;
+  padding:0;
+}
+
+    .employee-name-new{
+      padding-left:0;
+    }
+
+    .employee-name-new br{
+      display:none;
+    }
+
+    .employee-name-new h2{
+      line-height:100%;
+      padding:0 0px 2.5px 0px;
+      color:#666666;
+      font-size:32px;
+      font-weight:500;
+      letter-spacing:-1px;
+    }
+
+    .employee-degree-new{ }
+    .employee-degree-new p{
+      padding:0 0px 10px 0px;
+      color:#CD841D;
+      font-size:24px;
+      font-weight:400;
+    }
+
+    .employee-title-new{ }
+    .employee-title-new h3{
+      max-width:240px;
+      float:right;
+      padding:0 0px 10px 0px;
+      color:#888;
+      font-size:18px;
+      font-weight:400;
+      font-style:italic;
+    }
+
+    .employee-name-new,
+    .employee-degree-new,
+    .employee-title-new{
+      padding-left:0;
+    }
+
+    .employee-name-new h2,
+    .employee-degree-new p,
+    .employee-title-new h3{
+      line-height:100%;
+      text-align:right;
+      margin:0;
+    }
+
+          
+.employee-bio-new{
+  flex-basis:auto;
+  flex-grow:2;  
+  padding:0 15px;
+  margin-top:4px;
+  border-left:3px solid #E86C56;
+}
+
+    .employee-bio-new p{
+      font-size:18px;
+      margin-top:-4px;
+      line-height:26px;
+    }
+
+
+  @media (max-width:991px){
+    .employee-container-new{ 
+      flex-wrap:wrap;
+      max-width:initial;
+      padding: 15px 15px 15px 10px;
+    }
+
+    .employee-headshot{
+      flex-basis:auto;
+      align-self:center;
+      margin:0 15px 0 15px;
+    }
+
+        .employee-headshot img{
+          width:80px;
+          height:80px;
+        }
+
+
+    .employee-info-new{
+      flex-basis:calc(100% - 110px);
+      flex-grow:0; 
+      padding:15px 0;
+    }
+
+        .employee-name-new h2{padding:0 0 0 0; font-size:26px; font-weight:400;}
+        .employee-degree-new p{padding:5px 0 0 2.5px; font-size:20px; font-weight:500;}
+        .employee-title-new h3{padding:5px 0 0 1.5px; font-size:18px; }
+
+        .employee-name-new h2,
+        .employee-degree-new p,
+        .employee-title-new h3{width:100%; max-width:initial; text-align:left;}
+
+    
+    .employee-bio-new{
+      flex-basis:100%;
+      flex-grow:1;  
+      padding:3px 15px 0 10px;
+      margin:4px 0 0 15px;
+      border-left:3px solid #E86C56;
+    }
+        .employee-bio-new p{font-size:16px; text-align:justify; line-height:22px;}
+  }
+
+
+  @media (max-width:479px){
+    .employee-headshot{
+      margin:0 15px 0 2.5px;
+    }
+        .employee-name-new h2{padding:0 0 0 0; font-size:22px;}
+        .employee-degree-new p{padding:4px 0 0 2.5px; font-size:17px;}
+        .employee-title-new h3{padding:3px 0 0 1.5px; font-size:14px;}
+    
+    .employee-bio-new{
+      padding:3px 15px 0 10px;
+      margin:4px 0 0 5px;
+      border-left:2px solid #E86C56;
+    }
+      .employee-bio-new p{font-size:13px; text-align:justify; line-height:15px;}
+  }
+
+
+/*------------------------------ END New Employee Styles 2022 ------------------------------*/
+
+
+
+
+.employee-container{ 
+  padding: 15px 0px 15px 0px;
+  transition:.5s ease all;
+  max-width:1250px !important;}
+
+            
+.employee-info{ padding:0; }
+
+.employee-name{ padding-left:0;}
+.employee-name br{ display:none;}
+.employee-name h2{ line-height:100%; padding:0 0px 2.5px 0px; color:#666666; font-size:32px; font-weight:500; letter-spacing:-1px; }
+
+.employee-degree{ }
+.employee-degree p{padding:0 0px 10px 0px; color:#E8AA56; font-size:24px; font-weight:400 }
+
+.employee-title{ }
+.employee-title h3{max-width:240px; float:right;  padding:0 0px 10px 0px; color:#888; font-size:18px; font-weight:400; font-style:italic; }
+
+.employee-name,
+.employee-degree,
+.employee-title{padding-left:0;}
+
+.employee-name h2,
+.employee-degree p,
+.employee-title h3{line-height:100%; text-align:right; margin:0;}
+
+          
+.employee-bio{ padding:0 15px; margin-top:4px; border-left:3px solid #E86C56}
+.employee-bio p{font-size:18px; margin-top:-4px; line-height:26px; }
+
+   
+    @media (min-width:1300px){
+     .employee-container{max-width:1250px !important; padding-right:7vw !important;}
+    }   
+    @media (min-width:1200px) and (max-width:1299px){
+     .employee-container{max-width:1250px !important; padding-right:7vw !important;}
+    }
+    @media (min-width:992px) and (max-width:1199px){
+     .employee-container{padding-right:5vw !important;}
+    }  
+    @media (min-width:768px) and (max-width:991px){
+     .employee-container{padding-right:2vw !important;}
+    }    
+    @media (max-width:767px){
+     .anchored{padding: 15px 0px;}
+     .employee-container{ padding-left:10px!important; padding-top:7.5px;}
+        
+     .employee-info{ padding:0; }
+     
+     .employee-name h2{ font-weight:400; font-size:38px; padding:0 0px 0px 5px;  }
+     .employee-degree p{padding:5px 0px 0px 7.5px; font-size:28px; font-weight:500;}
+     .employee-title h3{float:none; padding:5px 0px 12.5px 6.5px; font-size:20px; }
+     
+     .employee-name h2,
+     .employee-degree p,
+     .employee-title h3{max-width:initial; text-align:left;}
+               
+     .employee-bio{margin-left:7.5px; padding-left:7.5px; width:95%;}
+     .employee-bio p{font-size:16px; text-align:left; line-height:22px;}
+     }
+     
+     @media (max-width:479px){
+     .anchored{padding: 12.5px 0px;}
+     .employee-container{ padding-left:5px!important; padding-top:0px!important;}
+     
+     .employee-name h2{ font-size:34px; }
+     .employee-degree p{font-size:24px;}
+     .employee-title h3{font-size:18px; padding:5px 0px 7.5px 6.5px;}
+     .employee-bio{ padding-right:2.5px; width:95%;}
+     .employee-bio p{font-size:14px; line-height:20px;}
+     }
+ 
+ 
+ 
+ /* ------ Employee Group Type Header Bars (i.e. "ux staff") ------- */
+ /* -----------------------------------------------------------------*/
+ /* -----------------------------------------------------------------*/
+ 
+ .col-emp-type{}
+ 
+.h2-emp-type{
+  display:block;
+  margin:80px 0 0 0 !important;
+  padding:0px 0px 7.5px 0px;
+  color:#777;
+  font-size:28px;
+  font-weight:500;
+  font-style:italic;
+  background-color:transparent;
+  border-bottom:1px solid #ccc;
+  text-align:center !important;
+ }
+
+ @media (max-width: 767px){
+  .h2-emp-type{
+    margin:0px 0 0 0 !important;
+    padding:30px 10px 0px 0px;
+    color:#777;
+    font-size:26px;
+    font-weight:500;
+    font-style:italic;
+    background-color:#fff;
+    text-align:right !important;
+  }
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* ----- Back-to-top button style on javascript-appear -----*/
+ /* ---------------------------------------------------------*/
+ /* ---------------------------------------------------------*/
+ 
+.back-to-top {
+  position: fixed;
+  left:initial;
+  right:2.5vw;
+  top:5vh;
+  display: inline-block;  
+  padding: 0;
+  margin: 0;
+  text-align:center;
+  font-size:18px;
+  font-weight:500;
+  color: #E86C56;
+  opacity:1; 
+  z-index:2000;
+}
+
+.back-to-top:hover {
+  cursor: pointer;
+}
+
+.back-to-top a {
+   position:absolute;
+   top:0;
+   left:-10%;
+   height:100%;
+   width:120%;
+ }
+
+.back-to-top a:focus {
+  outline:1px dashed #ccc !important;
+  outline-offset: 3px;
+}
+
+.back-to-top i {
+  text-align:center;
+  font-size:50px !important;
+ }
+ 
+@media (max-width:1300px){
+.back-to-top {
+  width:50px;
+  left:initial;
+  right:15px;
+  top:initial;
+  bottom:15px;
+  font-size:2px;
+  color: transparent;
+}
+.back-to-top i {
+  font-size:58px !important;
+  color: #E86C56;
+ }
+} 
+ 
+@media (max-width:767px){
+ .back-to-top {
+  left:initial;
+  right:10px;
+  top:initial;
+  bottom:10px;
+}
+}

@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*  Styles for UW Accordions (simple, lightweight) */
+/* Note: Javascript is required to get this accordion to function.  See bottom of this doc if you need the code */
+
+.uw-accordion{
+  margin: 0px 0;
+  overflow: hidden;
+
+}
+
+.uw-accordion li {
+  list-style-type: none;
+}
+
+.uw-accordion-btn {
+  background: #FFFFFF;
+  border: none;
+  border-bottom: solid 0px #eeeeee;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  padding: 7.5px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.uw-accordion-btn:before {
+  background: #EC695E;
+  content: '';
+  height: 3px;
+  margin-right: 37px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 22.5px;
+}
+
+.uw-accordion-btn:after {
+  background: #EC695E;
+  content: '';
+  height: 3px;
+  margin-right: 37px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 22.5px;
+}
+
+.uw-accordion-btn.active:before {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.uw-accordion-btn.active h2, .service_ctrl:focus h2 {
+  position: relative;
+}
+
+.uw-accordion-panel {
+  background: #F2F2F2;
+  display: none;
+  overflow: hidden;
+}
+
+
+
+/* Snippet: Javascript required functional accordion: */
+/* <script type="text/javascript">
+    $(function() {
+      $('.uw-accordion-btn').on('click', function(e) {
+        e.preventDefault();
+        if ($(this).hasClass('active')) {
+          $(this).removeClass('active');
+          $(this).next()
+          .stop()
+          .slideUp(300);
+        } else {
+          $(this).addClass('active');
+          $(this).next()
+          .stop()
+          .slideDown(300);
+        }
+      });
+    });
+</script> */

@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Accessibility Remediation</title>
+    
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main-nav.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/services-.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74352866-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-74352866-1', {
+       'link_attribution': true
+      });
+    </script> 
+    
+  </head>
+  
+  <body>
+  
+    <nav class="navbar navbar-default" id="navbar-uw">
+      <div class="container-fluid container-fluid-sm">
+  
+        <!------- Skipnav (Hidden via css) ------>
+        <a href="#maincontent" class="skipnav" aria-label="Hit enter to skip navigation" id="skip">Skip Navigation</a>
+     
+        <!-- Brand and mobile-dropdown-toggle  -->
+        <div class="navbar-header" id="header-uw">
+          <button class="navbar-toggle collapsed" data-target="#navbar-collapse-uw" data-toggle="collapse" type="button">
+            <i aria-hidden="false" aria-label="Menu Icon" class="fa fa-reorder fa-3x" title="Open Main Navigation Menu"></i>
+          </button>
+          <a aria-label="Link to home page" class="navbar-brand" href="index.html" id="pagetop">
+            <img alt="UserWorks Logo" id="brand-logo-uw" src="img/UW-Logo-Br-nav.png"> 
+            <img alt="UserWorks Logo Letter U W" id="brand-logo-uw-ltr" src="img/UW-Logo-Br-Ltr.png">
+          </a>
+        </div>
+  
+        <!-- Collapses into dropdown on Mobile -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-uw">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-expanded="false">Services<span class="caret"></span></a>
+              <ul class="dropdown-menu dropdown-menu-left" role="menu">
+                <li><a href="usercentereddesign.html" aria-label="user-centered design">User-Centered Design</a></li>
+                <li><a href="#" class="active" aria-label="Current page. accessibility remediation">Accessibility Remediation</a></li>
+                <li><a href="meddevstandards.html" aria-label="medical device standards">Medical Device Standards</a></li>
+                <li><a href="recruiting.html" aria-label="participant recruitment">Participant Recruitment</a></li>
+                <li><a class="serv-all" href="business.html"><i aria-hidden="true" class="fa fa-arrow-circle-o-right"></i> See All</a></li>
+              </ul>
+            </li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><div class="standout-participate"><a href="participate.html">Participate</a></div></li>
+          </ul>
+        </div>
+   
+      </div>
+    </nav>
+
+    <!---------- Skipnav Target ------------->
+    <main id="maincontent"></main>
+    
+    <!----------------------------------------------------->
+    <!------------------ Breadcrumb Block ----------------->
+    <!----------------------------------------------------->
+    
+    <div class="container-fluid container-banner non-home-banner-new" id="non-homepage-banner">
+      <div class="row row-sm-nopad">
+    
+        <div class="col-xs-12 banner-title-new">
+          <a href="index.html" class="fa fa-home bcrumb-div-new-a" aria-label="home" title="home"></a>
+          <i class="fa fa-angle-right bcrumb-div-new-b" aria-hidden="true"></i>
+          <a href="business.html" class="bcrumb-new">Services</a>
+          <i class="fa fa-angle-right bcrumb-div-new-b" aria-hidden="true"></i>
+          <a href="#" class="bcrumb-new active">Accessibility</a>
+        </div>
+    
+      </div>
+    </div>
+    
+    <!----------------------------------------------------->
+    <!--------------- Service Banner Block ---------------->
+    <!----------------------------------------------------->
+    
+    <div class="container-fluid container-content-a">
+      <div class="row row-sm">
+      
+        <div class="col-xs-12 icon-serv">
+          <img src="img/accessibility3sm-sh-tiny.png" class="img-icon-serv" alt="icon showing users">
+        </div>
+        
+        <div class="col-xs-12 col-xs-push-0 col-sm-10 col-sm-push-1 col-md-6 col-md-push-3 intro-serv">
+          <h1>Accessibility Remediation</h1>
+          <p>We can evaluate systems, websites, and devices against your accessibility standards and provide you with targeted, actionable recommendations for compliance. </p>
+        </div>
+        
+        <div class="col-xs-12 col-anch-serv">
+          <a href="#learn" class="anch-serv" aria-label="Jump to Learn About Users section">Evaluation</a>
+          <a href="#explore" class="anch-serv" aria-label="Jump to Explore User Interaction section">Remediation</a>
+          <a href="#improve" class="anch-serv" aria-label="Jump to Improve Product Design section">Training</a>
+        </div>
+    
+      </div>
+    </div>
+    
+    <!----------------------------------------------------->
+    <!--------------- Service Summary Block --------------->
+    <!----------------------------------------------------->
+    
+    <div class="container-fluid container-content-ax no-pad">
+      <div class="row row-sm">
+        <div class="col-xs-12">
+          <div class="col-xs-12 opener-serv">
+            <h2>Redefining Universal Access</h2>
+            <p class="text-block" style="padding-left:0">We believe that a good user experience is one that meets the needs of all users. That’s why we consider accessibility in all of our work, whether or not the project specifically calls for it. Similarly, we consider usability in all of our accessibility projects. By ensuring products are usable and accessible to people with disabilities, we improve the experience for all users. </p>
+            <!-- <p class="text-block" style="padding-left:0">We have in-depth knowledge of Assistive Technologies (AT) and software. To audit websites, we utilize well-known tools including a screen reader, screen magnifier, and voice recognition software. Moreover, we are vendor-neutral with respect to the fully automated code checking tools. If you already have the license for a code checker, we can make use of it. If not, we will make use of a set of widely used open source tools as well as our existing licenses for assistive technologies.</p>-->
+    
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    
+    <!----------------------------------------------------->
+    <!------------ Main Service Content Block ------------->
+    <!----------------------------------------------------->
+    
+    <div class="container-fluid container-content-a no-pad">
+    
+      <div class="row row-sm row-serv" id="learn">
+        <div class="col-xs-12 col-md-8">
+          <div class="col-xs-12 head-serv">
+            <h3 class="">Accessibility <b>Evaluation</b></h3>
+            <p class="p-sub-head">We take a multi-modal approach to each evaluation so that we can accurately identify - and determine the cause of - each accessibility violation.</p>
+          </div>
+    
+          <div class="col-xs-12 body-serv body-serv-a">
+            <ul>
+              <li class="text-block">Whenever possible, we include people with disabilities as expert evaluators or as participants in a usability test.</li>
+              <li class="text-block">We are vendor-neutral with respect to the fully automated code checking tools. If you already have the license for a code checker, we can make use of it. If not, we will make use of a set of widely used open source tools to identify potential issues.</li>
+              <li class="text-block">We manually inspect code, dynamic content, and document formatting in order to identify or confirm issues that may be hidden to the naked eye.</li>
+              <li class="text-block">We use assistive technologies like screen readers, speech recognition software, and magnification tools to verify accessibility issues that may be present.</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="col-xs-12 col-sm-11 col-md-4 list-serv">
+          <div class="list-serv-inner">
+            <h4>Methods we can use to evaluate the accessibility of a product:</h4>
+            <ul class="bul bul-check bul-blue">
+              <li>Usability testing with people with disabilities</li>
+              <li>Hands-on evaluation by accessibility specialist</li>
+              <li>Automated code checking</li>
+            </ul>
+          </div>
+        </div>
+    
+      </div>
+    
+      <div class="row row-sm row-serv" id="explore">
+        <div class="col-xs-12 col-md-8">
+          <div class="col-xs-12 head-serv">
+            <h3 class="">Accessibility <b>Remediation</b></h3>
+            <p class="p-sub-head">In addition to identifying accessibility issues, we help you fix them. In many cases, we can even do the fixing for you.</p>
+          </div>
+    
+          <div class="col-xs-12 body-serv body-serv-a">
+            <ul>
+              <li class="text-block">We adjust document markup (headings, alt text, etc.) and redesign page layouts and tables to make your documents more accessible.</li>
+              <li class="text-block">We convert your documents from a variety of file formats (including Word, Excel, PowerPoint, Publisher, and InDesign) into accessible PDFs.</li>
+              <li class="text-block">We design, create, and test accessible PDF and HTML forms.</li>
+              <li class="text-block">We can also update certain HTML webpages with accessible code – or provide you with specific code recommendations for your developers to implement.</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="col-xs-12 col-sm-11 col-md-4 list-serv" id="">
+          <div class="list-serv-inner">
+            <h4>Methods we can use to make your documents and webpages accessible:</h4>
+            <ul class="bul bul-check bul-blue">
+              <li>Update document markup, layout, and design</li>
+              <li>Convert source documents to accessible PDFs</li>
+              <li>Design, create, and test fillable forms</li>
+              <li>Update HTML and CSS</li>
+            </ul>
+          </div>
+        </div>
+    
+      </div>
+    
+      <div class="row row-sm row-serv" id="improve">
+        <div class="col-xs-12 col-md-8">
+          <div class="col-xs-12 head-serv">
+            <h3 class="">Accessibility <b>Training</b></h3>
+            <p class="p-sub-head">The best way to create accessible products is to increase awareness among designers and developers. We can train your team and help you build accessibility into the design process.</p>
+          </div>
+    
+          <div class="col-xs-12 body-serv body-serv-a">
+            <ul>
+              <li>We can conduct customized in-person or webinar training for designers and developers</li>
+              <li>We can work with you to create or update styles guides to include accessible design techniques</li>
+              <li>We'll demonstrate and discuss existing accessibility issues and recommendations</li>
+              <li>We can show your team how to incorporate accessible design into existing practices</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="col-xs-12 col-sm-11 col-md-4 list-serv" id="">
+          <div class="list-serv-inner">
+            <h4>Methods we can use to increase accessibility knowledge and awareness among your team: </h4>
+            <ul class="bul bul-check bul-blue">
+              <li>In-person training</li>
+    
+              <li>Webinar training</li>
+              <li>Accessibility demonstrations</li>
+              <li>Style guide modification</li>
+            </ul>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+
+    <!----------------------------------------------------->
+    <!------------------- Footer Block -------------------->
+    <!----------------------------------------------------->
+  
+    <footer>
+      <div class="container-fluid container-footer-new">
+        <div class="row row-sm">
+          <div class="col-xs-12" id="col-foot-lower">
+  
+            <!------------ Social Icons ------------->
+            <div class="col-xs-12 col-sm-12 col-foot-social">
+              <a href="https://www.facebook.com/userworks" target="_blank" aria-label="UserWorks on Facebook.com - Opens in new tab">
+                <i class="fa fa-facebook-square i-con" id="foot-fbk" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.twitter.com/userworks" target="_blank" aria-label="UserWorks on Twitter.com - Opens in new tab">
+                <i class="fa fa-twitter-square i-con" id="foot-twt" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/userworks-inc-" target="_blank" aria-label="UserWorks on Linkedin.com - Opens in new tab">
+                <i class="fa fa-linkedin-square i-con" id="foot-lnkd" aria-hidden="true"></i>
+              </a>
+            </div>
+  
+            <!------------- Footer Nav -------------->
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-6 col-md-push-3 col-foot-nav">
+              <ul>
+                <li><a aria-label="Return to top of page" href="#pagetop">&uarr; Top</a></li>
+                <li><a href="business.html" id="bus-foot">Services</a></li>
+                <li><a href="team.html" id="team-foot">Team</a></li>
+                <li><a href="facilities.html" id="fac-foot">Facilities</a></li>
+                <li><a href="contact.html" id="cont-foot">Contact</a></li>
+              </ul>
+            </div>
+
+            <!---------- Copyright Info ------------->
+            <div class="col-xs-12 col-sm-12" id="copyright-new">
+              <p>Copyright &copy; 2022 UserWorks, Inc. All rights reserved.</p>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!------- jQuery & Bootstrap JS --------->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+  </body>
+  
+</html>

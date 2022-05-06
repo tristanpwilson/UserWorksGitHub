@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+.col-latest-block{
+  }
+.col-latest-block{
+  }
+.col-slides{
+   margin:7.5px 0 15px 5px;
+   padding:0 0 0 15px;
+  }
+.a-slides{
+   font-size:22px;
+   font-weight:500;
+   color:#466A9B;
+  }
+.venue-slides,
+.author-slides{
+   margin-left:2px;
+   padding-left:7.5px;
+   line-height:100%;
+   font-size:18px;
+   font-weight:500;
+   border-left:2px solid #aaa;
+  }
+.venue-slides{ 
+   margin-top:5px !important;}
+.author-slides{
+   padding-top:5px;
+  }
+.author-slides a{
+   color:#666;
+   text-decoration:underline;
+  }
+
+
+#col-photos{
+    padding:15px 15px 0 15px;
+    }
+
+#uwCarousel{
+  height:450px;
+  overflow:hidden;
+  background:#444;
+  }
+
+#uwCarousel img{
+  height:450px;
+  margin:0 auto 0 auto;
+  }
+
+#uwCarousel .carousel-control {
+  position: absolute;
+  top:88%;
+  bottom: 0;
+  left: 0;
+  width: 65px;
+  height:12%;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  padding:0 15px 0 0px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  opacity:1;
+  background:rgba(236,105,94,0.50) !important;
+}
+
+#uwCarousel .carousel-control.left {border-radius:0 5px 0 0;}
+#uwCarousel .carousel-control.right {right: 0;left: auto;border-radius:5px 0 0 0;}
+
+#uwCarousel .carousel-control:hover,
+#uwCarousel .carousel-control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  background:rgba(236,105,94,0.95) !important;
+}
+
+#uwCarousel .carousel-control .fa-chevron-left,
+#uwCarousel .carousel-control .fa-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px;
+}
+
+@media (max-width:767px){
+  #uwCarousel{
+   height:80vw;}
+  #uwCarousel img{
+   width:auto;
+   height:80vw;}
+   #uwCarousel .carousel-control {
+    top:80% !important;
+    height:20% !important;}
+ }  
+
+
+
+
+#col-tweets{
+ min-height:550px;
+}
+
+#col-tweets h3{ 
+   display:inline-block;}
+   
+#twitter-user{
+   display:inline-block;
+   color:#EC695E;
+   font-weight:500;
+   font-size:20px;
+   margin-left:1.5vw;}
+
+#box-tweets{
+  padding:0px;
+}
+

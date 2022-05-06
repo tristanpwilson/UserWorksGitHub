@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container-srv { padding:60px 0 0 0}
+
+.col-srv-head {}
+
+.col-srv-head h2 {
+  position: absolute;
+  bottom: 15px;
+  margin: 0;
+  font-size: 50px;
+  font-weight: 400;
+  color: #666;
+}
+
+.col-srv-head .left {
+  left: 7.5px;
+}
+.col-srv-head .right {
+  right: 7.5px;
+}
+
+@media (max-width:1199px) {
+  .col-srv-head h2 {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width:767px) {
+  .col-srv-head { padding:0}
+  .col-srv-head h2 {
+    position: relative;
+    left: initial;
+    bottom: initial;
+    text-align: center;
+    font-size: 7vw;
+  }
+}
+
+.col-srv-head img {
+  display:block;
+  width: 90%;
+  margin:0 auto;
+}
+
+.accordion-srv {
+  /* overflow: hidden;*/
+ 
+}
+
+.btn-srv-body {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  margin: 0px 0 0 0;
+  padding: 15px 60px 15px 22.5px !important;
+  color: #555;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  border-top: 1px solid #ccc;
+  border-bottom: 0px solid #ccc;
+  border-left:none;
+  border-right:none;
+  outline: none !important; 
+  background: #fff;
+}
+
+.btn-srv-body:hover,
+.btn-srv-body:focus {
+  opacity:.9;
+}
+
+.btn-srv-body.active {
+}
+
+.solid-blue {color: #466A9B !important;}
+.solid-green {color:#44AA6D !important;}
+.solid-red {color: #EC695E !important;}
+.solid-orange {color: #ECAE5E !important;}
+
+.col-srv-panel {
+  display: none;
+  padding: 15px;
+  background: #Fbfbfb;
+  overflow: hidden;
+}
+
+
+/* --- Pseudo Elements for the Accordion "+" & "-" button animations ----*/
+
+.btn-srv-body:before {
+  background: #555;
+  content: '';
+  height: 3px;
+  width: 15px;
+  margin-right: 37px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-srv-body:after {
+  background: #555;
+  content: '';
+  height: 3px;
+  width: 15px;
+  margin-right: 37px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.btn-srv-body.active:before {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+
+/* Snippet: The Javascript required for accordions on the services page to funciton: */
+/* <script type="text/javascript">
+    $(function() {
+      $('.uw-accordion-btn').on('click', function(e) {
+        e.preventDefault();
+        if ($(this).hasClass('active')) {
+          $(this).removeClass('active');
+          $(this).next()
+          .stop()
+          .slideUp(300);
+        } else {
+          $(this).addClass('active');
+          $(this).next()
+          .stop()
+          .slideDown(300);
+        }
+      });
+    });
+</script> */

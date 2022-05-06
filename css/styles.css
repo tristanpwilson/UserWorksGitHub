@@ -1,0 +1,775 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600);
+
+/* --------------------------------------------------------*/
+/* --------------------------------------------------------*/
+/* ---------- Universal Styles Across All Pages ---------- */
+/* --------------------------------------------------------*/
+/* --------------------------------------------------------*/
+
+* {box-sizing: border-box; font-family: 'Work Sans', sans-serif;}
+*:focus { outline: dashed 1px rgba(0, 0, 0, 0.30) !important; outline-offset: 4px;}
+*:active {outline: none !important;}
+
+/* Link Styles */
+
+a {color: #466A9B;}
+a:hover {text-decoration: none;}
+
+/* Paragraph Styles */
+
+h1 {font-weight: 500; color: #555;}
+h2, h3, h4 {font-weight: 500; color: #595959;}
+p {font-weight: 400; text-align: justify; color: #555;}
+b {font-weight: 500;}
+
+h1 {font-size: 32px;}
+h2 {font-size: 28px;}
+h3 {font-size: 26px;}
+h4 {font-size: 24px;}
+p {font-size: 16px;}
+.p2 {font-size: 16px;}
+
+@media (max-width:1199px) {
+  h1 {font-size: 30px;}
+  h2 {font-size: 26px;}
+  h3 {font-size: 24px;}
+  h4 {font-size: 22px;}
+  p {font-size: 16px;}
+}
+
+@media (max-width:991px) {
+  h1 {font-size: 28px;}
+  h2 {font-size: 24px;}
+  h3 {font-size: 22px;}
+  h4 {font-size: 20px;}
+  p {font-size: 16px;}
+}
+
+@media (max-width:767px) {
+  h1 {font-size: 26px;}
+  h2 {font-size: 22px;}
+  h3 {font-size: 20px;}
+  h4 {font-size: 18px;}
+  p {font-size: 15px;}
+  .p2 {font-size: 14px !important;}
+}
+
+@media (max-width:479px) {
+  h1 {font-size: 24px;}
+  h2 {font-size: 20px;}
+  h3 {font-size: 18px;}
+  h4 {font-size: 16px;}
+  p {font-size: 14px;}
+  .p2 {font-size: 12px !important;}
+}
+
+.p-small {
+  margin: 5px 0;
+  padding: 2.5px 0 !important;
+  display: block;
+  font-style: none;
+  font-size: 14px !important;
+}
+
+@media (max-width: 767px) {
+  p {text-align: initial;}
+}
+
+
+/* --------------------------------------------------------*/
+/* ----------------- General Body Styles ------------------*/
+/* --------------------------------------------------------*/
+
+body {
+  background-color: #fff;
+}
+
+.container-fluid {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-fluid-sm,
+.row-sm {
+  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+@media (max-width: 767px) {
+  .container-fluid-sm,
+  .row-sm {
+    padding: 0 0px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+.row-sm-nopad {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+
+/* --------------------------------------------------------*/
+/* --------------- Breadcrumb Banner Styles ---------------*/
+/* --------------------------------------------------------*/
+
+#non-homepage-banner {
+  padding: 5px 0 0 0 !important;
+}
+
+.non-home-banner-new {
+  background: #fafafa;
+}
+
+.banner-title-new {
+  padding: 0 15px;
+}
+
+.bcrumb-new,
+.bcrumb-div-new-a,
+.bcrumb-div-new-b {
+  color: #666;
+  font-weight: 400;
+}
+
+.bcrumb-new {
+  display: inline-block;
+  margin: 2px 0 0 0 !important;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+}
+
+.bcrumb-new:hover,
+.bcrumb-new:focus,
+.bcrumb-div-new-a:hover,
+.bcrumb-div-new-a:focus {
+  color: #EC695E;
+}
+
+.bcrumb-new.active {
+  color: #EC695E;
+}
+
+.bcrumb-new.active:hover,
+.bcrumb-new.active:focus {
+  color: #555;
+}
+
+.bcrumb-div-new-a,
+.bcrumb-div-new-b {
+  font-size: 14px !important;
+}
+
+.bcrumb-div-new-a {
+  margin-right: 9px;
+  padding: 5px;
+}
+
+.bcrumb-div-new-b {
+  margin-right: 4px;
+}
+
+@media (max-width:767px) {
+  .bcrumb-new {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width:479px) {
+  .bcrumb-new {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 3px;
+  }
+  
+  .bcrumb-div-new-a {
+    margin-right: 2px;
+    padding: 5px 3px;
+  }
+  
+  .bcrumb-div-new-b {
+    margin-right: 1px;
+  }
+}
+
+
+/* --------------------------------------------------------*/
+/* ------------------- Container Type A -------------------*/
+/* --------------------------------------------------------*/
+
+/* Section Type: a (White Background) */
+
+.container-content-a {
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  overflow: hidden;
+}
+
+/* Section Type: ax (Gray Background) */
+
+.container-content-ax {
+  height: auto;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background-color: #fafafa;
+  border-top: 1px solid #eee;
+}
+
+/* Section A Universal Text Formats */
+
+.container-content-a h1,
+.container-content-ax h1 {
+  margin-top: 5px;
+}
+
+.container-content-a h2,
+.container-content-ax h2 {
+  margin-top: 5px;
+  text-align: left;
+}
+
+.container-content-a h3,
+.container-content-ax h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.container-content-a h4,
+.container-content-ax h4 {
+  margin-top: 0px;
+  padding: 7.5px;
+  text-align: left;
+}
+
+.container-content-a p,
+.container-content-ax p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width:767px) {
+  .container-content-a {
+    padding: 30px 5px;
+  }
+  
+  .container-content-ax {
+    padding: 30px 5px;
+  }
+  
+  .container-content-a h1,
+  .container-content-ax h1 {
+    padding: 7.5px 0 5px 0;
+  }
+}
+
+@media (max-width:479px) {
+  .container-content-a {
+    padding: 22.5px 5px;
+  }
+  
+  .container-content-ax {
+    padding: 22.5px 5px;
+  }
+}
+
+
+/* --------------------------------------------------------*/
+/* -------------------- Footer Styles -------------------- */
+/* --------------------------------------------------------*/
+
+.container-footer-new {
+  padding: 30px 0 22.5px 0;
+  background-color: #fcfcfc;
+  border-top: 1px solid #f0f0f0;
+}
+
+#col-foot-lower {
+  padding: 0 0;
+}
+
+/* Footer Social Section */
+
+.col-foot-social {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.col-foot-social a {
+  padding: 0;
+  margin: 0 22.5px;
+  font-size: 22px;
+  color: #777;
+}
+
+.col-foot-social a:hover {
+  color: #999;
+}
+
+/* Footer Navigation Section */
+
+.col-foot-nav {
+  padding: 15px 0 0 0;
+  margin: 0 0;
+}
+
+.col-foot-nav ul {
+  display: flex !important;
+  justify-content: space-around !important;
+  float: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.col-foot-nav ul li {
+  padding: 0;
+  margin: 0;
+  width: 20%;
+  text-align: center;
+}
+
+.col-foot-nav ul li:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin: 5px 0 0 0;
+  right: 0;
+  height: 12.5px;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.col-foot-nav ul li:last-child:after {
+  display: none;
+}
+
+.col-foot-nav ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  color: #555;
+  background: transparent;
+}
+
+/* Footer Copyright Section */
+
+#copyright-new {
+  padding: 15px 0 0 0;
+  margin: 0;
+}
+
+#copyright-new p {
+  margin: 4px 0 0 0;
+  padding-top: 0px;
+  font-weight: 500;
+  color: #777;
+  font-size: 12px;
+  font-style: italic;
+  text-align: center !important;
+}
+
+@media (max-width:767px) {
+  .col-foot-nav ul li a {
+    padding: 7.5px 0;
+    font-size: 14px;
+  }
+}
+
+@media (max-width:479px) {
+  .col-foot-nav ul li a {
+    font-size: 12px;
+  }
+}
+
+
+/* --------------------------------------------------------*/
+/* ------------------ General Modifiers -------------------*/
+/* --------------------------------------------------------*/
+
+.unline {
+  text-decoration: underline;
+}
+
+.unline:hover,
+.unline:focus {
+  text-decoration: none;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.no-pad {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.min-pad {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.body-hr-narrow {
+  width: 40%;
+  margin: 15px auto;
+  border-top: 1px solid #ddd;
+}
+
+@media (max-width:991px) {
+  .min-pad-h-mobile {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .mob-hidden {
+    display: none !important;
+  }
+}
+
+
+/* --------------------------------------------------------*/
+/* ----------------- Text Block Modifiers -----------------*/
+/* --------------------------------------------------------*/
+
+.text-block {
+  padding: 0 10px 15px 10px;
+}
+
+.text-block-sm {
+  padding: 0 10px 0px 10px;
+}
+
+.text-block-h {
+  padding: 30px 7.5px 5px 7.5px;
+}
+
+.text-block-h-sm{
+  margin: 5px 0 10px 0 !important;
+  padding: 15px 7.5px 5px 7.5px;
+}
+
+.text-block-h-xs{
+  margin: 5px 0 5px 0 !important;
+  padding: 5px 7.5px 5px 7.5px;
+}
+
+.text-block-center {
+  text-align: center !important;
+}
+
+.text-block-ul {
+  padding: 15px 30px 15px 30px !important;
+}
+
+.text-block-ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.text-block-ul li b {
+  font-weight: 500;
+}
+
+.text-block-ol{
+  padding: 5px 30px 5px 30px !important;
+}
+
+.text-block-ol li{
+  margin: 0 0 10px 5px;
+  list-style-position: outside;
+  font-size: 16px;
+}
+
+@media (max-width:767px) {
+  .text-block {
+    padding: 0 2.5px 12.5px 2.5px;
+  }
+  .text-block-sm {
+    padding: 0 2.5px 0px 2.5px;
+  }
+  
+  .text-block-h {
+    padding: 15px 2px 5px 2px;
+  }
+  
+  .text-block-h-sm {
+    padding: 10px 2px 2.5px 2px !important;
+  }
+  .text-block-h-xs {
+    padding: 5px 2px 2.5px 2px !important;
+  }
+  
+  .text-block-ol li{
+    margin-bottom: 5px;
+    font-size:14px;
+  }
+ .text-block-ul li {
+   margin-bottom: 5px;
+ }
+}
+
+@media (max-width:479px) {
+  .text-block-h-sm {
+    padding: 7.5px 2px 2.5px 2px !important;
+  }
+  .text-block-h-xs {
+    padding: 5px 2px 2.5px 2px !important;
+  }
+  .text-block-ol li{
+    margin-bottom: 5px;
+    font-size:14px;
+  }
+}
+
+
+/* --------------------------------------------------------*/
+/* ----------------- Bulleted List Styles -----------------*/
+/* --------------------------------------------------------*/
+
+.bul {
+  margin: 0!important;
+  padding: 0 0 0 0px !important;
+}
+
+/* .bul is used to avoid screwing up the nav */
+
+.bul li {
+  color: #555;
+  font-size: 16px;
+  line-height: 20px;
+  list-style: none;
+  position: relative;
+  padding-left: 40px;
+}
+
+.bul li:before {
+  font-family: FontAwesome;
+  position: absolute;
+  color: #888;
+}
+
+.bul-default li:before {
+  content: "\f111";
+  font-size: 8px;
+  top: 5px;
+  left: 17px;
+}
+
+.bul-arrow li:before {
+  content: "\f0da";
+  font-size: 14px !important;
+  top: 0px;
+  left: 17px;
+}
+
+.bul-check li:before {
+  content: "\f00c";
+  font-size: 16px;
+  top: 3px;
+  left: 13px;
+}
+
+.bul-default li:before {
+  color: #555;
+}
+
+.bul-blue li:before {
+  color: #466A9B
+}
+
+@media (max-width:767px) {
+  ul.bul {
+    padding: 0 0 0 22.5px !important;
+  }
+  
+  ul.bul li {
+    font-size: 14px;
+  }
+  
+  .bul li {
+    padding-left: 25px;
+    font-size: 14px;
+  }
+  
+  .bul-default li:before {
+    font-size: 8px;
+    top: 4px;
+    left: 2px;
+  }
+  
+  .bul-arrow li:before {
+    font-size: 14px;
+    top: 4px;
+    left: 2px;
+  }
+  
+  .bul-check li:before {
+    font-size: 14px;
+    top: 3px;
+    left: 0px !important;
+  }
+}
+
+
+/* --------------------------------------------------------*/
+/* ------------- Inputs and Controls Styles ---------------*/
+/* --------------------------------------------------------*/
+
+::-webkit-input-placeholder {
+  color: #bbb !important;
+}
+
+::-moz-placeholder {
+  color: #bbb !important;
+}
+
+:-moz-placeholder {
+  color: #bbb !important;
+}
+
+:-ms-input-placeholder {
+  color: #bbb !important;
+}
+
+::-ms-input-placeholder {
+  color: #bbb !important;
+}
+
+
+/* --------------------------------------------------------*/
+/* ------------- Button & Links & Etc. Styles -------------*/
+/* --------------------------------------------------------*/
+
+.btn-elton {
+  padding: 7.5px 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 1px;
+  border: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  transition: .2s ease background;
+}
+
+.btn-elton:hover,
+.btn-elton:active,
+.btn-elton:focus {
+  color: #fff;
+  transition: .2s ease background;
+}
+
+.btn-gray{
+  color: #777;
+  font-style:italic;
+  background: #ccc;
+  text-shadow: none;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.23) inset;
+  cursor:default;
+}
+.btn-gray:hover,
+.btn-gray:active,
+.btn-gray:focus {
+  color:#777;
+  background: #ccc;
+}
+
+.btn-green {
+  background: #3BA767;
+  text-shadow: 0 1px 1px #0F7839, 0 0px 2px #0F7839;
+  box-shadow: 0px 1px 0px 0px #269C56, 
+              0px 2px 1px 0px rgba(0, 0, 0, 0.23);
+}
+
+.btn-green:hover,
+.btn-green:active,
+.btn-green:focus {
+  background: #5EB481;
+}
+
+.btn-green:active {
+  background: #40A066;
+  box-shadow: 0px 1px 0px 0px #40A066, 
+              0px 1px 0px 0px #348253 inset;
+}
+
+.btn-blue {
+  background: #466A9B;
+  text-shadow:0 1px 1px #2D5996, 0 0px 2px #2D5996;
+  box-shadow: 0px 1px 0px 0px #2C568F, 
+              0px 2px 1px 0px rgba(0, 0, 0, 0.23);
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+  background: #5C7BA5;
+}
+
+.btn-blue:active {
+  background: #436695;
+  box-shadow: 0px 1px 0px 0px #436695, 
+              0px 1px 0px 0px #344F74 inset !important;
+}
+
+.btn-red {
+  background: #EC695E;
+  box-shadow: 0px 1px 0px 0px #BB4238,
+              0px 2px 0px 0px #BB4238, 
+             -1px 3px 4px 0px rgba(0, 0, 0, 0.23);
+}
+
+.btn-red:hover,
+.btn-red:active,
+.btn-red:focus {
+  background: #EE7D73;
+  box-shadow: 0px 1px 0px 0px #BB4238;
+}
+
+.btn-center {
+  position: relative;
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.btn-right {
+  float: right;
+  margin: 0 4vw 15px 0;
+}
+
+.a-cover {
+  position: absolute;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.a-white {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+

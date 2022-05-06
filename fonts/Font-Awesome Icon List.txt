@@ -1,0 +1,21 @@
+**font-awesome**
+fa-facebook-square
+fa-twitter-square
+fa-linkedin-square
+fa-check
+fa-phone
+fa-caret-down
+fa-caret-right
+fa-arrow-circle-o-right
+fa-arrow-circle-up
+fa-fax
+fa-external-link
+fa-file
+fa-file-text-o
+fa-home
+fa-angle-right
+fa-reorder
+
+**zondicons**
+menu (changed to "reorder" to replace font awesome)
+checkmark

@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.contact-box{
+  padding:15px 0;
+  border-bottom:1px solid #eee;
+  min-height:100px
+}
+.contact-box:last-child{
+  border-bottom:none;
+}
+.contact-box h3{
+  display:block;
+  float:left;
+  margin:0;
+  padding-top:10px;
+} 
+.i-con{ 
+  float:left;
+  width:15px;
+  font-size:20px !important;
+  line-height:30px !important;
+  text-align:right;
+  margin-right:15px;
+  padding-top:9px;
+}
+
+#email-icon{
+  font-size:18px !important;
+}
+  
+.contact-box-2{
+  height:200px;
+  padding:15px 10%;
+  background:#fafafa;
+  border-radius:5px;
+  }
+
+.contact-link{
+  display:block;
+  font-size:18px;
+  padding-top:10px;
+  }
+  
+
+.col-address-info{
+  padding:15px 0px;
+  margin:15px 0; 
+  height:265px !important;
+  transition:.3s ease all;
+  text-align:left;
+  }
+
+.col-address-info h3{ 
+  padding-top:15px;
+}
+
+@media (max-width:1199px){
+  .contact-box .contact-inner{
+    padding:0;
+  }
+  .contact-box h3{
+    font-size:22px;
+  }
+  .i-con{ 
+   font-size:18px !important;
+   line-height:22px !important;
+  }
+  #email-icon{
+   font-size:16px !important;
+  }
+  .contact-box a{
+    font-size:16px;
+  }
+  .contact-box .contact-inner{
+    padding:0 7.5px;
+  }
+  .contact-box-2{
+    margin:0 -15px;
+    padding:22px;
+    height:auto;
+  }
+}
+
+@media (max-width:991px){
+  .contact-box h3{
+    font-size:28px;
+  }
+  .i-con{ 
+   font-size:22px !important;
+   line-height:28px !important;
+  }
+  #email-icon{
+   font-size:20px !important;
+  }
+  .contact-box a{
+    font-size:18px;
+  }
+}
+@media (max-width: 767px){
+  .col-address-info{
+    padding:0 15px !important;
+    height:auto !important;
+   }
+
+}
+
+
+
+#map-canvas{
+  height: 300px;
+  width: 100%;
+  pointer-events: none;
+  
+ }
+  
+.map-container{
+  position:relative;
+  width: 98%;
+  margin:15px auto 0px auto;
+  cursor:pointer !important;
+  border-top: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+  border-radius:4px 4px 0 0; 
+}
+
+#caption-map{
+  width: 98%;
+  margin:0 auto 30px auto;
+  padding:7.5px 0;
+  text-align:center;
+  border-top:1px solid #ddd;
+  border-bottom: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+  border-radius:0 0 3px 3px;
+  background-color:#fff;
+}
+
+
+@media (max-width:991px){
+  #map-canvas{
+  height: 300px;}
+  }

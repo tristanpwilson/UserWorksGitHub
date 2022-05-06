@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/* -- Services Sub Navigation --- */
+  #list-services{
+   padding:30px 60px; 
+   } 
+  
+   @media (max-width:767px){
+     #list-services{
+     padding:15px 5vw; 
+     } 
+     }
+  
+  
+ #list-services a{
+  display:block;
+  padding:5px 5px;
+  margin-bottom:5px;
+  border-radius:3px;
+  color:#fff;
+  font-size:20px;
+  font-weight:500;
+  width:100%!important;
+  text-align:center;
+  text-decoration:none !important;
+  background-color:#EC695E;} 
+
+ #evaluation-anch{}
+ #design-anch{}
+ #remediation-anch{}
+  
+
+
+/* ----- Services Overviews - Container + Content Styles ----- */
+
+.container-services{padding-top:0; padding-bottom:0;}
+
+.col-img-serv{
+  min-height:400px !important;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position:right bottom;
+  background-origin:content-box;
+}
+@media (max-width:991px){
+.col-img-serv{
+  min-height:40vw !important;
+}
+  }
+#evaluation-img{background-image: url("../img/evaluation.png");}
+#design-img{background-image: url("../img/design.png");}
+#remediation-img{background-image: url("../img/remediation.png");}
+
+
+
+
+.text-col-services1{
+padding-top:30px;
+  }
+.text-col-services1 p{  
+  font-size:16px;
+  }
+
+.text-col-services1 h2{    
+ 
+}
+
+
+
+.col-services{
+  padding-bottom:0px;
+}
+  
+.text-col-services{
+
+ }
+ 
+.text-col-services p{  
+  width:80%;
+  margin:7.5px auto;
+  bottom:0;
+  font-size:18px;
+  }
+
+.text-col-services h2{    
+    width:80%;
+    margin:30px auto 15px auto;
+    text-align:center;
+    font-size:60px;
+    font-weight:400;
+    color:#666;     
+}
+
+
+@media (max-width:767px){
+.col-services h2{ 
+
+    width:100%;
+}
+  }
